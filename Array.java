@@ -19,3 +19,10 @@ public class Array {
         System.out.println("Count: " + count);
     }
 }
+
+
+
+
+// The program first identifies the maximum element in the array using a loop.
+
+// It then counts and prints how many elements in the array are smaller than that maximum value.
