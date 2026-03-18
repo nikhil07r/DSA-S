@@ -1,0 +1,6 @@
+// _______Algorithm________
+
+// If we Have a Opening bracket push into teh stack
+// When closing brackte Appear , pop from the stack
+// If the stack is empty , when trying to pop ,that means isNotBAlanced
+// After Procesing teh Whole string , if the stack is not empty , that means isBalanced.
