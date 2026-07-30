@@ -1,4 +1,5 @@
-// wap to find the largest of a & b . if a & b are equal then print "Both numbers are equal".
+//  wap to find the largest of a & b . if a & b are equal then print "Both numbers are equal".
+
 public class Equal {
     public static void main(String[] args) {
         int a = 20, b = 20;
@@ -11,3 +12,4 @@ public class Equal {
         }
     }
 }
+
