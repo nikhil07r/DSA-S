@@ -1,3 +1,4 @@
+// wap to count the number of digits in a given number.
 import java.util.Scanner;
 
 class CountDigit {
@@ -10,14 +11,14 @@ class CountDigit {
         int count = 0;
         int temp = n;
 
-        // Special case: 0 has 1 digit
+    
         if (temp == 0) {
             count = 1;
         } else {
-            // Keep dividing by 10 until the number becomes 0
+        
             while (temp != 0) {
-                temp = temp / 10; // Removes the last digit
-                count++; // Increases digit count
+                temp = temp / 10; 
+                count++; 
             }
         }
 
