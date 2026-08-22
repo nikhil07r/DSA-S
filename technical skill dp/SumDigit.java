@@ -1,4 +1,5 @@
 // wap to sum of a digits of a number
+
  import java.util.Scanner;
 public class SumDigit {
     public static void main(String[] args) {
@@ -16,4 +17,3 @@ public class SumDigit {
         System.out.println("Sum = " + sum);
     }
 }
-

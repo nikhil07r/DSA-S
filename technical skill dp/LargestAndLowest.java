@@ -7,3 +7,6 @@ public class LargestAndLowest {
         System.out.println("Difference: " + (largest - lowest));
     }
 }
+
+
+// Wap to print a palindrome
