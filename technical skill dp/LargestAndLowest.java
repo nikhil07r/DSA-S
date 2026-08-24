@@ -9,4 +9,4 @@ public class LargestAndLowest {
 }
 
 
-// Wap to print a palindrome
+// Wap to print a palindrome.
