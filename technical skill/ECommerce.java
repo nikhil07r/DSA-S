@@ -1,5 +1,21 @@
 // 1. The E-Commerce Discount Hierarchy • Scenario: You are designing a tiered discount system. The base class Customer defines a method calculateBill(double amount). Subclasses RegularCustomer, PrimeCustomer, and CorporateCustomer override this method. • Challenge: Inside CorporateCustomer's overridden method, write a nested if-else logic where if the amount > ₹50,000 and the corporate tier is "Platinum", they get an additional 15% flat discount on top of the baseline calculation fetched via super.calculateBill(). Trace what happens if a Customer reference points to a CorporateCustomer object at runtime. 
 
+public class ECommerce {
+
+    public static void main(String[] args) {
+
+        // Runtime polymorphism
+        Customer customer = new CorporateCustomer("Platinum");
+
+        double amount = 60000;
+
+        double finalBill = customer.calculateBill(amount);
+
+        System.out.println("Original Amount: ₹" + amount);
+        System.out.println("Final Bill: ₹" + finalBill);
+    }
+}
+
 class Customer {
 
     double calculateBill(double amount) {
@@ -42,7 +58,7 @@ class CorporateCustomer extends Customer {
         // Nested if-else
         if (amount > 50000) {
 
-            if (tier.equals("Platinum")) {
+            if ("Platinum".equals(tier)) {
                 // Additional 15% discount
                 bill = bill * 0.85;
             } else {
@@ -57,18 +73,3 @@ class CorporateCustomer extends Customer {
     }
 }
 
-public class Main {
-
-    public static void main(String[] args) {
-
-        // Runtime polymorphism
-        Customer customer = new CorporateCustomer("Platinum");
-
-        double amount = 60000;
-
-        double finalBill = customer.calculateBill(amount);
-
-        System.out.println("Original Amount: ₹" + amount);
-        System.out.println("Final Bill: ₹" + finalBill);
-    }
-}
