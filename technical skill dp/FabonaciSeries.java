@@ -1,3 +1,5 @@
+// wap to find n terms of a fibonnaci series after that print its sum also.
+
 public class FabonaciSeries {
     public static void main(String[] args) {
         int n = 7, a = 0, b = 1, sum = 0;

@@ -1,6 +1,6 @@
 // WAP to print the reverse of a number
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class ReverseofNumber {
     public static void main(String[] args) {
